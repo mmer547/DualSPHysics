@@ -2,7 +2,7 @@
 
 rem "name" and "dirout" are named according to the testcase
 
-set name=test2
+set name=test3
 set dirout=%name%_out
 set diroutdata=%dirout%\data
 
@@ -32,7 +32,7 @@ if not "%ERRORLEVEL%" == "0" goto fail
 
 rem Executes DualSPHysics to simulate SPH method.
 %dualsphysicsgpu% -gpu %dirout%/%name% %dirout% -dirdataout data -svres
-if not "%ERRORLEVEL%" == "0" goto fail
+rem if not "%ERRORLEVEL%" == "0" goto fail
 
 rem Executes PartVTK4 to create VTK files with particles.
 set dirout2=%dirout%\particles
