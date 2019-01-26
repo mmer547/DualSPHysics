@@ -1,3 +1,3 @@
-# This repository contain my practice data of DualSPHygics.
+This repository contain my practice data of DualSPHygics.
 
-# I will upload my calculation files and tools.
+I will upload my calculation files and tools.
